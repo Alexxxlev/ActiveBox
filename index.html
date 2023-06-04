@@ -1,442 +1,704 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Open+Sans:wght@700&family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Open+Sans:wght@700&family=Raleway:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
-    <link rel="manifest" href="img/favicons/site.webmanifest">
-    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="img/favicons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
 
-    <meta name="description" content="Описание страницы">
-    <meta name="keywords" content="Создание сайтов, верстка сайтов">
+    <meta name="description" content="Описание страницы" />
+    <meta name="keywords" content="Создание сайтов, верстка сайтов" />
     <meta name="google" content="notranslate" />
 
     <title>ActiveBox</title>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-</head>
-<body>
-
-
+  </head>
+  <body>
     <!-- Sprite -->
-    <svg style="display: none;">
+    <svg style="display: none">
+      <symbol id="facebook" viewBox="0 0 512 512">
+        <g>
+          <path
+            d="M308.3,508.5c-2.5,0.1-4.1,0.3-5.7,0.3c-34.2,0-68.3-0.1-102.5,0.1c-4.8,0-6.1-1.3-6.1-6.1c0.1-79.6,0.1-159.3,0.1-238.9   c0-2.1,0-4.2,0-6.9c-18.6,0-36.7,0-55.1,0c0-28.4,0-56.3,0-85c1.9,0,3.7,0,5.4,0c15,0,30-0.1,45,0.1c3.8,0,4.8-1.1,4.8-4.8   c-0.2-22.3-0.2-44.7,0-67c0.1-15.6,2.6-30.8,9.8-44.9c10.3-19.9,26.6-32.8,47.2-40.8c16.8-6.6,34.5-9,52.3-9.3   c29-0.4,58-0.2,87-0.3c2.7,0,4.9-0.1,4.9,3.7c-0.1,27.5-0.1,55-0.1,82.5c0,0.3-0.1,0.6-0.5,1.9c-1.7,0-3.6,0-5.5,0   c-18,0-36-0.1-54,0c-10.4,0-18.8,4.2-24.1,13.3c-1.6,2.7-2.6,6.2-2.6,9.4c-0.3,17,0,34-0.2,51c0,4,1.2,5.1,5.1,5.1   c25-0.2,50-0.1,75-0.1c2,0,3.9,0,7.3,0c-3.5,28.6-6.9,56.6-10.4,84.9c-26,0-51.3,0-77.1,0C308.3,340.8,308.3,424.4,308.3,508.5z"
+          />
+        </g>
+      </symbol>
 
-        <symbol id="facebook" viewBox="0 0 512 512">
-            <g>
-                <path d="M308.3,508.5c-2.5,0.1-4.1,0.3-5.7,0.3c-34.2,0-68.3-0.1-102.5,0.1c-4.8,0-6.1-1.3-6.1-6.1c0.1-79.6,0.1-159.3,0.1-238.9   c0-2.1,0-4.2,0-6.9c-18.6,0-36.7,0-55.1,0c0-28.4,0-56.3,0-85c1.9,0,3.7,0,5.4,0c15,0,30-0.1,45,0.1c3.8,0,4.8-1.1,4.8-4.8   c-0.2-22.3-0.2-44.7,0-67c0.1-15.6,2.6-30.8,9.8-44.9c10.3-19.9,26.6-32.8,47.2-40.8c16.8-6.6,34.5-9,52.3-9.3   c29-0.4,58-0.2,87-0.3c2.7,0,4.9-0.1,4.9,3.7c-0.1,27.5-0.1,55-0.1,82.5c0,0.3-0.1,0.6-0.5,1.9c-1.7,0-3.6,0-5.5,0   c-18,0-36-0.1-54,0c-10.4,0-18.8,4.2-24.1,13.3c-1.6,2.7-2.6,6.2-2.6,9.4c-0.3,17,0,34-0.2,51c0,4,1.2,5.1,5.1,5.1   c25-0.2,50-0.1,75-0.1c2,0,3.9,0,7.3,0c-3.5,28.6-6.9,56.6-10.4,84.9c-26,0-51.3,0-77.1,0C308.3,340.8,308.3,424.4,308.3,508.5z"/>
-            </g>
-        </symbol>
+      <symbol id="twitter" viewBox="0 0 512 512">
+        <g>
+          <path
+            d="M4,440.5c55.6,5,105.7-9,151.3-43.2c-47.7-4.2-79.6-28-97.4-72.6c15.6,1.9,30.2,2.4,45.7-1.8   c-51.4-16-78.8-49.6-82.5-103.8c15.4,7.2,29.9,12.4,47,12.6c-30.5-22.9-46.1-52.6-45.5-90c0.3-17.2,4.9-33.4,14-48.7   C93.1,159.1,164,195.7,251.3,201.8c-0.5-3.8-0.8-6.8-1.2-9.9c-7.2-55.4,28.8-105.8,83.8-116.3c34.5-6.6,65,2.5,90.8,26.3   c4,3.6,7.4,4.4,12.4,3.1c20.1-5.1,39.2-12.5,57.7-22.5c-7.1,23.4-21.7,41-41.5,55.8c4.5-0.8,9.1-1.4,13.6-2.3   c4.7-1,9.4-2.1,14.1-3.4c4.5-1.2,8.9-2.6,13.3-4.1c4.5-1.5,9-3.2,14.3-4.1c-2.6,3.6-5.1,7.4-7.9,10.9c-11.6,14.7-25,27.6-39.7,39.1   c-1.5,1.2-2.8,3.8-2.7,5.6c0.8,35.5-4.2,70.1-15.7,103.7c-22.6,66.2-62,119.8-121.1,158.1c-29.2,18.9-61.1,31.3-95.2,38.5   c-33.8,7.1-67.8,8.4-101.9,4.4c-34.2-4-66.7-14.1-97.3-29.9c-8.1-4.1-15.9-8.7-23.8-13.1C3.6,441.3,3.8,440.9,4,440.5z"
+          />
+        </g>
+      </symbol>
 
-        <symbol id="twitter" viewBox="0 0 512 512">
-            <g>
-                <path d="M4,440.5c55.6,5,105.7-9,151.3-43.2c-47.7-4.2-79.6-28-97.4-72.6c15.6,1.9,30.2,2.4,45.7-1.8   c-51.4-16-78.8-49.6-82.5-103.8c15.4,7.2,29.9,12.4,47,12.6c-30.5-22.9-46.1-52.6-45.5-90c0.3-17.2,4.9-33.4,14-48.7   C93.1,159.1,164,195.7,251.3,201.8c-0.5-3.8-0.8-6.8-1.2-9.9c-7.2-55.4,28.8-105.8,83.8-116.3c34.5-6.6,65,2.5,90.8,26.3   c4,3.6,7.4,4.4,12.4,3.1c20.1-5.1,39.2-12.5,57.7-22.5c-7.1,23.4-21.7,41-41.5,55.8c4.5-0.8,9.1-1.4,13.6-2.3   c4.7-1,9.4-2.1,14.1-3.4c4.5-1.2,8.9-2.6,13.3-4.1c4.5-1.5,9-3.2,14.3-4.1c-2.6,3.6-5.1,7.4-7.9,10.9c-11.6,14.7-25,27.6-39.7,39.1   c-1.5,1.2-2.8,3.8-2.7,5.6c0.8,35.5-4.2,70.1-15.7,103.7c-22.6,66.2-62,119.8-121.1,158.1c-29.2,18.9-61.1,31.3-95.2,38.5   c-33.8,7.1-67.8,8.4-101.9,4.4c-34.2-4-66.7-14.1-97.3-29.9c-8.1-4.1-15.9-8.7-23.8-13.1C3.6,441.3,3.8,440.9,4,440.5z"/>
-            </g>
-        </symbol>
-
-        <symbol id="linkedin" viewBox="0 0 12 12">
-            <g>
-                <path d="M10.8 0A1.2 1.2 0 0112 1.2v9.6a1.2 1.2 0 01-1.2 1.2H1.2A1.2 1.2 0 010 10.8V1.2A1.2 1.2 0 011.2 0h9.6zM8.09 4.356a1.87 1.87 0 00-1.598.792l-.085.133h-.024v-.783H4.676v5.727h1.778V7.392c0-.747.142-1.47 1.068-1.47.913 0 .925.854.925 1.518v2.785h1.778V7.084l-.005-.325c-.05-1.38-.456-2.403-2.13-2.403zm-4.531.142h-1.78v5.727h1.78V4.498zm-.89-2.846a1.032 1.032 0 100 2.064 1.032 1.032 0 000-2.064z"/>
-            </g>
-        </symbol>
-
-
+      <symbol id="linkedin" viewBox="0 0 12 12">
+        <g>
+          <path
+            d="M10.8 0A1.2 1.2 0 0112 1.2v9.6a1.2 1.2 0 01-1.2 1.2H1.2A1.2 1.2 0 010 10.8V1.2A1.2 1.2 0 011.2 0h9.6zM8.09 4.356a1.87 1.87 0 00-1.598.792l-.085.133h-.024v-.783H4.676v5.727h1.778V7.392c0-.747.142-1.47 1.068-1.47.913 0 .925.854.925 1.518v2.785h1.778V7.084l-.005-.325c-.05-1.38-.456-2.403-2.13-2.403zm-4.531.142h-1.78v5.727h1.78V4.498zm-.89-2.846a1.032 1.032 0 100 2.064 1.032 1.032 0 000-2.064z"
+          />
+        </g>
+      </symbol>
     </svg>
 
-
     <!--Header-->
-<header class="header" id="header">
-    <div class="container">
+    <header class="header" id="header">
+      <div class="container">
         <div class="header__inner">
-            <div class="header__logo">
-                <img src="img/logo.png" alt="">
-            </div>
+          <div class="header__logo">
+            <img src="img/logo.png" alt="" />
+          </div>
 
-            <nav class="nav" id="nav">
-                <a class="nav__link" href="#" data-scroll="#features">Features</a>
-                <a class="nav__link" href="#" data-scroll="#works">Works</a>
-                <a class="nav__link" href="#" data-scroll="#team">Our Team</a>
-                <a class="nav__link" href="#" data-scroll="#reviews">Testimonials</a>
-                <a class="nav__link" href="#" data-scroll="#download">Download</a>
-            </nav>
+          <nav class="nav" id="nav">
+            <a class="nav__link" href="#" data-scroll="#features"
+              >Преимущества</a
+            >
+            <a class="nav__link" href="#" data-scroll="#works">Каталог</a>
+            <a class="nav__link" href="#" data-scroll="#team">Наша команда</a>
+            <a class="nav__link" href="#" data-scroll="#reviews">Отзывы</a>
+            <a class="nav__link" href="#" data-scroll="#download">Цена</a>
+          </nav>
 
-            <button class="burger" type="button" id="navToggle">
-                <span class="burger__item">Menu</span>
-            </button>
+          <button class="burger" type="button" id="navToggle">
+            <span class="burger__item">Menu</span>
+          </button>
         </div>
-    </div>
-</header>
-    
+      </div>
+    </header>
 
     <!--Intro-->
-<div class="intro" id="intro">
-    <div class="container">
+    <div class="intro" id="intro">
+      <div class="container">
         <div class="intro-inner">
-            <h1 class="intro__title">Welcome to the website template made <span class="title__alexlev">by Alex Lev</span></h1>
-            <h2 class="intro__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna vel scelerisque nisl consectetur et.</h2>
-            <a class="btn btn--red" href="#">Find Out More</a>
+          <h1 class="intro__title">Картины на заказ</h1>
+          <h2 class="intro__subtitle">
+            Картины и портреты на холсте по фото на заказ за 1-2 дня от 1290
+            рублей!<br />
+            Картины маслом в короткие сроки!
+          </h2>
+          <a class="btn btn--red" href="#">Перейти в каталог</a>
         </div>
+      </div>
     </div>
-</div>
 
-
-<!--Features-->
-<div class="container" id="features">
-    <div class="features">
+    <!--Features-->
+    <div class="container" id="features">
+      <div class="features">
         <div class="features__item">
-            <img class="features__icon" src="img/features/feature-1.png" alt="">
-            <h4 class="features__title">Easily Customised</h4>
-            <div class="features__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</div>
-        </div>
-
-        <div class="features__item">
-            <img class="features__icon" src="img/features/feature-2.png" alt="">
-            <h4 class="features__title">Responsive Ready</h4>
-            <div class="features__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</div>
-        </div>
-
-        <div class="features__item">
-            <img class="features__icon" src="img/features/feature-3.png" alt="">
-            <h4 class="features__title">Modern Design</h4>
-            <div class="features__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</div>
+          <img class="features__icon" src="img/icons/like.svg" alt="" />
+          <h4 class="features__title">Качественно</h4>
+          <div class="features__text">
+            Основной принцип нашей работы - делать так, словно делаешь для себя
+          </div>
         </div>
 
         <div class="features__item">
-            <img class="features__icon" src="img/features/feature-4.png" alt="">
-            <h4 class="features__title">Clean Code</h4>
-            <div class="features__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</div>
+          <img class="features__icon" src="img/icons/profi.svg" alt="" />
+          <h4 class="features__title">Профессиональные художники</h4>
+          <div class="features__text">
+            Профессиональные художники и дизайнеры с опытом работы более 8 лет
+          </div>
         </div>
 
         <div class="features__item">
-            <img class="features__icon" src="img/features/feature-5.png" alt="">
-            <h4 class="features__title">Ready to Ship</h4>
-            <div class="features__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</div>
+          <img class="features__icon" src="img/icons/love.svg" alt="" />
+          <h4 class="features__title">С любовью</h4>
+          <div class="features__text">
+            Каждая работа выполнена с большой любовью к своему делу, и в каждый
+            проект мы вкладываем частичку себя!
+          </div>
         </div>
-        
+
         <div class="features__item">
-            <img class="features__icon" src="img/features/feature-6.png" alt="">
-            <h4 class="features__title">Download for Free</h4>
-            <div class="features__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla</div>
+          <img class="features__icon" src="img/icons/user.svg" alt="" />
+          <h4 class="features__title">Индивидуальный подход</h4>
+          <div class="features__text">
+            Наш дизайнер ответит вам в любой день недели и в любое время суток.
+            В течение дня после обращения к нам вы получите подборку картин с
+            визуализацией в ваш интерьер
+          </div>
         </div>
-    </div><!-- /.Features-->
-</div><!-- /.Container-->
 
-
-<!-- Works -->
-<div class="works" id="works">
-    <div class="works__item">
-        <img class="works__photo" src="img/work/work-1.jpg" alt="">
-        <div class="works__content">
-            <div class="works__title">Project Name</div>
-            <div class="works__text">User Interface Design</div>
+        <div class="features__item">
+          <img class="features__icon" src="img/icons/paint.svg" alt="" />
+          <h4 class="features__title">Только ручная работа</h4>
+          <div class="features__text">
+            Процесс работы начинается с натяжки холста на подрамник, рисунка и
+            до написания картины акриловыми или масляными красками
+          </div>
         </div>
+
+        <div class="features__item">
+          <img class="features__icon" src="img/icons/planet.svg" alt="" />
+          <h4 class="features__title">Экологично</h4>
+          <div class="features__text">
+            Мы не загрязняем природу лакокрасочными материалами и используем
+            вторично картонные и полиэтиленовые покрытия, упаковывая в них
+            картины для отправки. Пластиковые банки не выбрасываются, а
+            используются многократно в работе
+          </div>
+        </div>
+      </div>
+      <!-- /.Features-->
     </div>
+    <!-- /.Container-->
 
-    <div class="works__item">
-        <img class="works__photo" src="img/work/work-2.jpg" alt="">
+    <!-- Works -->
+    <div class="works" id="works">
+      <div class="works__item">
+        <img class="works__photo" src="img/work/work-1.jpg" alt="" />
         <div class="works__content">
-            <div class="works__title">Project Name</div>
-            <div class="works__text">User Interface Design</div>
+          <div class="works__title">Project Name</div>
+          <div class="works__text">User Interface Design</div>
         </div>
-    </div>
+      </div>
 
-    <div class="works__item">
-        <img class="works__photo" src="img/work/work-3.jpg" alt="">
+      <div class="works__item">
+        <img class="works__photo" src="img/work/work-2.jpg" alt="" />
         <div class="works__content">
-            <div class="works__title">Project Name</div>
-            <div class="works__text">User Interface Design</div>
+          <div class="works__title">Project Name</div>
+          <div class="works__text">User Interface Design</div>
         </div>
-    </div>
+      </div>
 
-    <div class="works__item">
-        <img class="works__photo" src="img/work/work-4.jpg" alt="">
+      <div class="works__item">
+        <img class="works__photo" src="img/work/work-3.jpg" alt="" />
         <div class="works__content">
-            <div class="works__title">Project Name</div>
-            <div class="works__text">User Interface Design</div>
+          <div class="works__title">Project Name</div>
+          <div class="works__text">User Interface Design</div>
         </div>
-    </div>
+      </div>
 
-    <div class="works__item">
-        <img class="works__photo" src="img/work/work-5.jpg" alt="">
+      <div class="works__item">
+        <img class="works__photo" src="img/work/work-4.jpg" alt="" />
         <div class="works__content">
-            <div class="works__title">Project Name</div>
-            <div class="works__text">User Interface Design</div>
+          <div class="works__title">Project Name</div>
+          <div class="works__text">User Interface Design</div>
         </div>
-    </div>
+      </div>
 
-    <div class="works__item">
-        <img class="works__photo" src="img/work/work-6.jpg" alt="">
+      <div class="works__item">
+        <img class="works__photo" src="img/work/work-5.jpg" alt="" />
         <div class="works__content">
-            <div class="works__title">Project Name</div>
-            <div class="works__text">User Interface Design</div>
+          <div class="works__title">Project Name</div>
+          <div class="works__text">User Interface Design</div>
         </div>
-    </div>
+      </div>
 
-    <div class="works__item">
-        <img class="works__photo" src="img/work/work-7.jpg" alt="">
+      <div class="works__item">
+        <img class="works__photo" src="img/work/work-6.jpg" alt="" />
         <div class="works__content">
-            <div class="works__title">Project Name</div>
-            <div class="works__text">User Interface Design</div>
+          <div class="works__title">Project Name</div>
+          <div class="works__text">User Interface Design</div>
         </div>
-    </div>
+      </div>
 
-    <div class="works__item">
-        <img class="works__photo" src="img/work/work-8.jpg" alt="">
+      <div class="works__item">
+        <img class="works__photo" src="img/work/work-7.jpg" alt="" />
         <div class="works__content">
-            <div class="works__title">Project Name</div>
-            <div class="works__text">User Interface Design</div>
+          <div class="works__title">Project Name</div>
+          <div class="works__text">User Interface Design</div>
         </div>
+      </div>
+
+      <div class="works__item">
+        <img class="works__photo" src="img/work/work-8.jpg" alt="" />
+        <div class="works__content">
+          <div class="works__title">Project Name</div>
+          <div class="works__text">User Interface Design</div>
+        </div>
+      </div>
     </div>
-</div><!-- /.Works-->
+    <!-- /.Works-->
 
-
-<!-- Team -->
-<div class="team" id="team">
-    <div class="container">
+    <!-- Team -->
+    <div class="team" id="team">
+      <div class="container">
         <div class="team__inner">
-
-            <div class="team__item">
-                <img class="team__phofo" src="img/team/team-1.jpg" alt="">
-                <div class="team__name">Ruth Woods</div>
-                <div class="team__prof">Founder, CEO</div>
-                <div class="team__text">
-                    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-                </div>
-                <div class="social">
-                    <a class="social__item" href="#" target="_blank">
-                        <svg class="social__icon">
-                            <use xlink:href="#facebook"></use>
-                        </svg>
-                    </a>
-
-                    <a class="social__item" href="#" target="_blank">
-                        <svg class="social__icon">
-                            <use xlink:href="#twitter"></use>
-                        </svg>
-                    </a>
-
-                    <a class="social__item" href="#" target="_blank">
-                        <svg class="social__icon">
-                            <use xlink:href="#linkedin"></use>
-                        </svg>
-                    </a>
-                </div>
+          <div class="team__item">
+            <img class="team__phofo" src="img/team/team-2.jpg" alt="" />
+            <div class="team__name">Виктор</div>
+            <div class="team__prof">
+              Основатель<br />
+              Дизайнер интерьеров
             </div>
-
-            <div class="team__item">
-                <img class="team__phofo" src="img/team/team-2.jpg" alt="">
-                <div class="team__name">Timothy Reed</div>
-                <div class="team__prof">Co-Founder, Developer</div>
-                <div class="team__text">
-                    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-                </div>
-                <div class="social">
-                    <a class="social__item" href="#" target="_blank">
-                        <svg class="social__icon">
-                            <use xlink:href="#facebook"></use>
-                        </svg>
-                    </a>
-
-                    <a class="social__item" href="#" target="_blank">
-                        <svg class="social__icon">
-                            <use xlink:href="#twitter"></use>
-                        </svg>
-                    </a>
-
-                    <a class="social__item" href="#" target="_blank">
-                        <svg class="social__icon">
-                            <use xlink:href="#linkedin"></use>
-                        </svg>
-                    </a>
-                </div>
+            <div class="team__text">
+              <p>МГУ им.Огарева специальность Художник-Проектировщик</p>
             </div>
-            
-            <div class="team__item">
-                <img class="team__phofo" src="img/team/team-3.jpg" alt="">
-                <div class="team__name">Victoria Valdez</div>
-                <div class="team__prof">UI Designer</div>
-                <div class="team__text">
-                    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-                </div>
-                <div class="social">
-                    <a class="social__item" href="#" target="_blank">
-                        <svg class="social__icon">
-                            <use xlink:href="#facebook"></use>
-                        </svg>
-                    </a>
+            <div class="social">
+              <a class="social__item" href="#" target="_blank">
+                <svg
+                  fill="#c6cacc"
+                  width="20px"
+                  height="20px"
+                  viewBox="-2.5 0 32 32"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>vk</title>
+                  <path
+                    d="M16.563 15.75c-0.5-0.188-0.5-0.906-0.531-1.406-0.125-1.781 0.5-4.5-0.25-5.656-0.531-0.688-3.094-0.625-4.656-0.531-0.438 0.063-0.969 0.156-1.344 0.344s-0.75 0.5-0.75 0.781c0 0.406 0.938 0.344 1.281 0.875 0.375 0.563 0.375 1.781 0.375 2.781 0 1.156-0.188 2.688-0.656 2.75-0.719 0.031-1.125-0.688-1.5-1.219-0.75-1.031-1.5-2.313-2.063-3.563-0.281-0.656-0.438-1.375-0.844-1.656-0.625-0.438-1.75-0.469-2.844-0.438-1 0.031-2.438-0.094-2.719 0.5-0.219 0.656 0.25 1.281 0.5 1.813 1.281 2.781 2.656 5.219 4.344 7.531 1.563 2.156 3.031 3.875 5.906 4.781 0.813 0.25 4.375 0.969 5.094 0 0.25-0.375 0.188-1.219 0.313-1.844s0.281-1.25 0.875-1.281c0.5-0.031 0.781 0.406 1.094 0.719 0.344 0.344 0.625 0.625 0.875 0.938 0.594 0.594 1.219 1.406 1.969 1.719 1.031 0.438 2.625 0.313 4.125 0.25 1.219-0.031 2.094-0.281 2.188-1 0.063-0.563-0.563-1.375-0.938-1.844-0.938-1.156-1.375-1.5-2.438-2.563-0.469-0.469-1.063-0.969-1.063-1.531-0.031-0.344 0.25-0.656 0.5-1 1.094-1.625 2.188-2.781 3.188-4.469 0.281-0.5 0.938-1.656 0.688-2.219-0.281-0.625-1.844-0.438-2.813-0.438-1.25 0-2.875-0.094-3.188 0.156-0.594 0.406-0.844 1.063-1.125 1.688-0.625 1.438-1.469 2.906-2.344 4-0.313 0.375-0.906 1.156-1.25 1.031z"
+                  ></path>
+                </svg>
+              </a>
 
-                    <a class="social__item" href="#" target="_blank">
-                        <svg class="social__icon">
-                            <use xlink:href="#twitter"></use>
-                        </svg>
-                    </a>
+              <a class="social__item" href="#" target="_blank">
+                <svg
+                  fill="#c6cacc"
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M29.919 6.163l-4.225 19.925c-0.319 1.406-1.15 1.756-2.331 1.094l-6.438-4.744-3.106 2.988c-0.344 0.344-0.631 0.631-1.294 0.631l0.463-6.556 11.931-10.781c0.519-0.462-0.113-0.719-0.806-0.256l-14.75 9.288-6.35-1.988c-1.381-0.431-1.406-1.381 0.288-2.044l24.837-9.569c1.15-0.431 2.156 0.256 1.781 2.013z"
+                  />
+                </svg>
+              </a>
 
-                    <a class="social__item" href="#" target="_blank">
-                        <svg class="social__icon">
-                            <use xlink:href="#linkedin"></use>
-                        </svg>
-                    </a>
-                </div>
+              <a class="social__item" href="#" target="_blank">
+                <svg
+                  fill="#c6cacc"
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 32 32"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M25.805 7.996c0 0 0 0.001 0 0.001 0 0.994-0.806 1.799-1.799 1.799s-1.799-0.806-1.799-1.799c0-0.994 0.806-1.799 1.799-1.799v0c0.993 0.001 1.798 0.805 1.799 1.798v0zM16 20.999c-2.761 0-4.999-2.238-4.999-4.999s2.238-4.999 4.999-4.999c2.761 0 4.999 2.238 4.999 4.999v0c0 0 0 0.001 0 0.001 0 2.76-2.237 4.997-4.997 4.997-0 0-0.001 0-0.001 0h0zM16 8.3c0 0 0 0-0 0-4.253 0-7.7 3.448-7.7 7.7s3.448 7.7 7.7 7.7c4.253 0 7.7-3.448 7.7-7.7v0c0-0 0-0 0-0.001 0-4.252-3.447-7.7-7.7-7.7-0 0-0 0-0.001 0h0zM16 3.704c4.003 0 4.48 0.020 6.061 0.089 1.003 0.012 1.957 0.202 2.84 0.538l-0.057-0.019c1.314 0.512 2.334 1.532 2.835 2.812l0.012 0.034c0.316 0.826 0.504 1.781 0.516 2.778l0 0.005c0.071 1.582 0.087 2.057 0.087 6.061s-0.019 4.48-0.092 6.061c-0.019 1.004-0.21 1.958-0.545 2.841l0.019-0.058c-0.258 0.676-0.64 1.252-1.123 1.726l-0.001 0.001c-0.473 0.484-1.049 0.866-1.692 1.109l-0.032 0.011c-0.829 0.316-1.787 0.504-2.788 0.516l-0.005 0c-1.592 0.071-2.061 0.087-6.072 0.087-4.013 0-4.481-0.019-6.072-0.092-1.008-0.019-1.966-0.21-2.853-0.545l0.059 0.019c-0.676-0.254-1.252-0.637-1.722-1.122l-0.001-0.001c-0.489-0.47-0.873-1.047-1.114-1.693l-0.010-0.031c-0.315-0.828-0.506-1.785-0.525-2.785l-0-0.008c-0.056-1.575-0.076-2.061-0.076-6.053 0-3.994 0.020-4.481 0.076-6.075 0.019-1.007 0.209-1.964 0.544-2.85l-0.019 0.059c0.247-0.679 0.632-1.257 1.123-1.724l0.002-0.002c0.468-0.492 1.045-0.875 1.692-1.112l0.031-0.010c0.823-0.318 1.774-0.509 2.768-0.526l0.007-0c1.593-0.056 2.062-0.075 6.072-0.075zM16 1.004c-4.074 0-4.582 0.019-6.182 0.090-1.315 0.028-2.562 0.282-3.716 0.723l0.076-0.025c-1.040 0.397-1.926 0.986-2.656 1.728l-0.001 0.001c-0.745 0.73-1.333 1.617-1.713 2.607l-0.017 0.050c-0.416 1.078-0.67 2.326-0.697 3.628l-0 0.012c-0.075 1.6-0.090 2.108-0.090 6.182s0.019 4.582 0.090 6.182c0.028 1.315 0.282 2.562 0.723 3.716l-0.025-0.076c0.796 2.021 2.365 3.59 4.334 4.368l0.052 0.018c1.078 0.415 2.326 0.669 3.628 0.697l0.012 0c1.6 0.075 2.108 0.090 6.182 0.090s4.582-0.019 6.182-0.090c1.315-0.029 2.562-0.282 3.716-0.723l-0.076 0.026c2.021-0.796 3.59-2.365 4.368-4.334l0.018-0.052c0.416-1.078 0.669-2.326 0.697-3.628l0-0.012c0.075-1.6 0.090-2.108 0.090-6.182s-0.019-4.582-0.090-6.182c-0.029-1.315-0.282-2.562-0.723-3.716l0.026 0.076c-0.398-1.040-0.986-1.926-1.729-2.656l-0.001-0.001c-0.73-0.745-1.617-1.333-2.607-1.713l-0.050-0.017c-1.078-0.416-2.326-0.67-3.628-0.697l-0.012-0c-1.6-0.075-2.108-0.090-6.182-0.090z"
+                  ></path>
+                </svg>
+              </a>
             </div>
+          </div>
 
-            <div class="team__item">
-                <img class="team__phofo" src="img/team/team-4.jpg" alt="">
-                <div class="team__name">Beverly Little</div>
-                <div class="team__prof">Data Scientist</div>
-                <div class="team__text">
-                    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-                </div>
-                <div class="social">
-                    <a class="social__item" href="#" target="_blank">
-                        <svg class="social__icon">
-                            <use xlink:href="#facebook"></use>
-                        </svg>
-                    </a>
-
-                    <a class="social__item" href="#" target="_blank">
-                        <svg class="social__icon">
-                            <use xlink:href="#twitter"></use>
-                        </svg>
-                    </a>
-
-                    <a class="social__item" href="#" target="_blank">
-                        <svg class="social__icon">
-                            <use xlink:href="#linkedin"></use>
-                        </svg>
-                    </a>
-                </div>
+          <div class="team__item">
+            <img class="team__phofo" src="img/team/team-1.jpg" alt="" />
+            <div class="team__name">Наталья</div>
+            <div class="team__prof">Художник</div>
+            <div class="team__text">
+              <p>
+                ККТиМ ВГИК специальность живописец-педагог, художник анимации и
+                компьютерной графики
+              </p>
             </div>
-        </div><!-- /.Team__inner -->
-    </div><!-- /.Container -->
-</div><!-- /.Team -->
+            <div class="social">
+              <a class="social__item" href="#" target="_blank">
+                <svg
+                  fill="#c6cacc"
+                  width="20px"
+                  height="20px"
+                  viewBox="-2.5 0 32 32"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>vk</title>
+                  <path
+                    d="M16.563 15.75c-0.5-0.188-0.5-0.906-0.531-1.406-0.125-1.781 0.5-4.5-0.25-5.656-0.531-0.688-3.094-0.625-4.656-0.531-0.438 0.063-0.969 0.156-1.344 0.344s-0.75 0.5-0.75 0.781c0 0.406 0.938 0.344 1.281 0.875 0.375 0.563 0.375 1.781 0.375 2.781 0 1.156-0.188 2.688-0.656 2.75-0.719 0.031-1.125-0.688-1.5-1.219-0.75-1.031-1.5-2.313-2.063-3.563-0.281-0.656-0.438-1.375-0.844-1.656-0.625-0.438-1.75-0.469-2.844-0.438-1 0.031-2.438-0.094-2.719 0.5-0.219 0.656 0.25 1.281 0.5 1.813 1.281 2.781 2.656 5.219 4.344 7.531 1.563 2.156 3.031 3.875 5.906 4.781 0.813 0.25 4.375 0.969 5.094 0 0.25-0.375 0.188-1.219 0.313-1.844s0.281-1.25 0.875-1.281c0.5-0.031 0.781 0.406 1.094 0.719 0.344 0.344 0.625 0.625 0.875 0.938 0.594 0.594 1.219 1.406 1.969 1.719 1.031 0.438 2.625 0.313 4.125 0.25 1.219-0.031 2.094-0.281 2.188-1 0.063-0.563-0.563-1.375-0.938-1.844-0.938-1.156-1.375-1.5-2.438-2.563-0.469-0.469-1.063-0.969-1.063-1.531-0.031-0.344 0.25-0.656 0.5-1 1.094-1.625 2.188-2.781 3.188-4.469 0.281-0.5 0.938-1.656 0.688-2.219-0.281-0.625-1.844-0.438-2.813-0.438-1.25 0-2.875-0.094-3.188 0.156-0.594 0.406-0.844 1.063-1.125 1.688-0.625 1.438-1.469 2.906-2.344 4-0.313 0.375-0.906 1.156-1.25 1.031z"
+                  ></path>
+                </svg>
+              </a>
 
+              <a class="social__item" href="#" target="_blank">
+                <svg
+                  fill="#c6cacc"
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M29.919 6.163l-4.225 19.925c-0.319 1.406-1.15 1.756-2.331 1.094l-6.438-4.744-3.106 2.988c-0.344 0.344-0.631 0.631-1.294 0.631l0.463-6.556 11.931-10.781c0.519-0.462-0.113-0.719-0.806-0.256l-14.75 9.288-6.35-1.988c-1.381-0.431-1.406-1.381 0.288-2.044l24.837-9.569c1.15-0.431 2.156 0.256 1.781 2.013z"
+                  />
+                </svg>
+              </a>
 
-<!-- Testimonials -->
-<div class="reviews" id="reviews">
-    <div class="container">
+              <a class="social__item" href="#" target="_blank">
+                <svg
+                  fill="#c6cacc"
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 32 32"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M25.805 7.996c0 0 0 0.001 0 0.001 0 0.994-0.806 1.799-1.799 1.799s-1.799-0.806-1.799-1.799c0-0.994 0.806-1.799 1.799-1.799v0c0.993 0.001 1.798 0.805 1.799 1.798v0zM16 20.999c-2.761 0-4.999-2.238-4.999-4.999s2.238-4.999 4.999-4.999c2.761 0 4.999 2.238 4.999 4.999v0c0 0 0 0.001 0 0.001 0 2.76-2.237 4.997-4.997 4.997-0 0-0.001 0-0.001 0h0zM16 8.3c0 0 0 0-0 0-4.253 0-7.7 3.448-7.7 7.7s3.448 7.7 7.7 7.7c4.253 0 7.7-3.448 7.7-7.7v0c0-0 0-0 0-0.001 0-4.252-3.447-7.7-7.7-7.7-0 0-0 0-0.001 0h0zM16 3.704c4.003 0 4.48 0.020 6.061 0.089 1.003 0.012 1.957 0.202 2.84 0.538l-0.057-0.019c1.314 0.512 2.334 1.532 2.835 2.812l0.012 0.034c0.316 0.826 0.504 1.781 0.516 2.778l0 0.005c0.071 1.582 0.087 2.057 0.087 6.061s-0.019 4.48-0.092 6.061c-0.019 1.004-0.21 1.958-0.545 2.841l0.019-0.058c-0.258 0.676-0.64 1.252-1.123 1.726l-0.001 0.001c-0.473 0.484-1.049 0.866-1.692 1.109l-0.032 0.011c-0.829 0.316-1.787 0.504-2.788 0.516l-0.005 0c-1.592 0.071-2.061 0.087-6.072 0.087-4.013 0-4.481-0.019-6.072-0.092-1.008-0.019-1.966-0.21-2.853-0.545l0.059 0.019c-0.676-0.254-1.252-0.637-1.722-1.122l-0.001-0.001c-0.489-0.47-0.873-1.047-1.114-1.693l-0.010-0.031c-0.315-0.828-0.506-1.785-0.525-2.785l-0-0.008c-0.056-1.575-0.076-2.061-0.076-6.053 0-3.994 0.020-4.481 0.076-6.075 0.019-1.007 0.209-1.964 0.544-2.85l-0.019 0.059c0.247-0.679 0.632-1.257 1.123-1.724l0.002-0.002c0.468-0.492 1.045-0.875 1.692-1.112l0.031-0.010c0.823-0.318 1.774-0.509 2.768-0.526l0.007-0c1.593-0.056 2.062-0.075 6.072-0.075zM16 1.004c-4.074 0-4.582 0.019-6.182 0.090-1.315 0.028-2.562 0.282-3.716 0.723l0.076-0.025c-1.040 0.397-1.926 0.986-2.656 1.728l-0.001 0.001c-0.745 0.73-1.333 1.617-1.713 2.607l-0.017 0.050c-0.416 1.078-0.67 2.326-0.697 3.628l-0 0.012c-0.075 1.6-0.090 2.108-0.090 6.182s0.019 4.582 0.090 6.182c0.028 1.315 0.282 2.562 0.723 3.716l-0.025-0.076c0.796 2.021 2.365 3.59 4.334 4.368l0.052 0.018c1.078 0.415 2.326 0.669 3.628 0.697l0.012 0c1.6 0.075 2.108 0.090 6.182 0.090s4.582-0.019 6.182-0.090c1.315-0.029 2.562-0.282 3.716-0.723l-0.076 0.026c2.021-0.796 3.59-2.365 4.368-4.334l0.018-0.052c0.416-1.078 0.669-2.326 0.697-3.628l0-0.012c0.075-1.6 0.090-2.108 0.090-6.182s-0.019-4.582-0.090-6.182c-0.029-1.315-0.282-2.562-0.723-3.716l0.026 0.076c-0.398-1.040-0.986-1.926-1.729-2.656l-0.001-0.001c-0.73-0.745-1.617-1.333-2.607-1.713l-0.050-0.017c-1.078-0.416-2.326-0.67-3.628-0.697l-0.012-0c-1.6-0.075-2.108-0.090-6.182-0.090z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
 
+          <div class="team__item">
+            <img class="team__phofo" src="img/team/team-3.jpg" alt="" />
+            <div class="team__name">Дарья</div>
+            <div class="team__prof">Художник</div>
+            <div class="team__text">
+              <p>
+                ЛПУ специальность учитель рисования и черчения, МСЭИ
+                дизайнер-проектировщик
+              </p>
+            </div>
+            <div class="social">
+              <a class="social__item" href="#" target="_blank">
+                <svg
+                  fill="#c6cacc"
+                  width="20px"
+                  height="20px"
+                  viewBox="-2.5 0 32 32"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>vk</title>
+                  <path
+                    d="M16.563 15.75c-0.5-0.188-0.5-0.906-0.531-1.406-0.125-1.781 0.5-4.5-0.25-5.656-0.531-0.688-3.094-0.625-4.656-0.531-0.438 0.063-0.969 0.156-1.344 0.344s-0.75 0.5-0.75 0.781c0 0.406 0.938 0.344 1.281 0.875 0.375 0.563 0.375 1.781 0.375 2.781 0 1.156-0.188 2.688-0.656 2.75-0.719 0.031-1.125-0.688-1.5-1.219-0.75-1.031-1.5-2.313-2.063-3.563-0.281-0.656-0.438-1.375-0.844-1.656-0.625-0.438-1.75-0.469-2.844-0.438-1 0.031-2.438-0.094-2.719 0.5-0.219 0.656 0.25 1.281 0.5 1.813 1.281 2.781 2.656 5.219 4.344 7.531 1.563 2.156 3.031 3.875 5.906 4.781 0.813 0.25 4.375 0.969 5.094 0 0.25-0.375 0.188-1.219 0.313-1.844s0.281-1.25 0.875-1.281c0.5-0.031 0.781 0.406 1.094 0.719 0.344 0.344 0.625 0.625 0.875 0.938 0.594 0.594 1.219 1.406 1.969 1.719 1.031 0.438 2.625 0.313 4.125 0.25 1.219-0.031 2.094-0.281 2.188-1 0.063-0.563-0.563-1.375-0.938-1.844-0.938-1.156-1.375-1.5-2.438-2.563-0.469-0.469-1.063-0.969-1.063-1.531-0.031-0.344 0.25-0.656 0.5-1 1.094-1.625 2.188-2.781 3.188-4.469 0.281-0.5 0.938-1.656 0.688-2.219-0.281-0.625-1.844-0.438-2.813-0.438-1.25 0-2.875-0.094-3.188 0.156-0.594 0.406-0.844 1.063-1.125 1.688-0.625 1.438-1.469 2.906-2.344 4-0.313 0.375-0.906 1.156-1.25 1.031z"
+                  ></path>
+                </svg>
+              </a>
+
+              <a class="social__item" href="#" target="_blank">
+                <svg
+                  fill="#c6cacc"
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M29.919 6.163l-4.225 19.925c-0.319 1.406-1.15 1.756-2.331 1.094l-6.438-4.744-3.106 2.988c-0.344 0.344-0.631 0.631-1.294 0.631l0.463-6.556 11.931-10.781c0.519-0.462-0.113-0.719-0.806-0.256l-14.75 9.288-6.35-1.988c-1.381-0.431-1.406-1.381 0.288-2.044l24.837-9.569c1.15-0.431 2.156 0.256 1.781 2.013z"
+                  />
+                </svg>
+              </a>
+
+              <a class="social__item" href="#" target="_blank">
+                <svg
+                  fill="#c6cacc"
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 32 32"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M25.805 7.996c0 0 0 0.001 0 0.001 0 0.994-0.806 1.799-1.799 1.799s-1.799-0.806-1.799-1.799c0-0.994 0.806-1.799 1.799-1.799v0c0.993 0.001 1.798 0.805 1.799 1.798v0zM16 20.999c-2.761 0-4.999-2.238-4.999-4.999s2.238-4.999 4.999-4.999c2.761 0 4.999 2.238 4.999 4.999v0c0 0 0 0.001 0 0.001 0 2.76-2.237 4.997-4.997 4.997-0 0-0.001 0-0.001 0h0zM16 8.3c0 0 0 0-0 0-4.253 0-7.7 3.448-7.7 7.7s3.448 7.7 7.7 7.7c4.253 0 7.7-3.448 7.7-7.7v0c0-0 0-0 0-0.001 0-4.252-3.447-7.7-7.7-7.7-0 0-0 0-0.001 0h0zM16 3.704c4.003 0 4.48 0.020 6.061 0.089 1.003 0.012 1.957 0.202 2.84 0.538l-0.057-0.019c1.314 0.512 2.334 1.532 2.835 2.812l0.012 0.034c0.316 0.826 0.504 1.781 0.516 2.778l0 0.005c0.071 1.582 0.087 2.057 0.087 6.061s-0.019 4.48-0.092 6.061c-0.019 1.004-0.21 1.958-0.545 2.841l0.019-0.058c-0.258 0.676-0.64 1.252-1.123 1.726l-0.001 0.001c-0.473 0.484-1.049 0.866-1.692 1.109l-0.032 0.011c-0.829 0.316-1.787 0.504-2.788 0.516l-0.005 0c-1.592 0.071-2.061 0.087-6.072 0.087-4.013 0-4.481-0.019-6.072-0.092-1.008-0.019-1.966-0.21-2.853-0.545l0.059 0.019c-0.676-0.254-1.252-0.637-1.722-1.122l-0.001-0.001c-0.489-0.47-0.873-1.047-1.114-1.693l-0.010-0.031c-0.315-0.828-0.506-1.785-0.525-2.785l-0-0.008c-0.056-1.575-0.076-2.061-0.076-6.053 0-3.994 0.020-4.481 0.076-6.075 0.019-1.007 0.209-1.964 0.544-2.85l-0.019 0.059c0.247-0.679 0.632-1.257 1.123-1.724l0.002-0.002c0.468-0.492 1.045-0.875 1.692-1.112l0.031-0.010c0.823-0.318 1.774-0.509 2.768-0.526l0.007-0c1.593-0.056 2.062-0.075 6.072-0.075zM16 1.004c-4.074 0-4.582 0.019-6.182 0.090-1.315 0.028-2.562 0.282-3.716 0.723l0.076-0.025c-1.040 0.397-1.926 0.986-2.656 1.728l-0.001 0.001c-0.745 0.73-1.333 1.617-1.713 2.607l-0.017 0.050c-0.416 1.078-0.67 2.326-0.697 3.628l-0 0.012c-0.075 1.6-0.090 2.108-0.090 6.182s0.019 4.582 0.090 6.182c0.028 1.315 0.282 2.562 0.723 3.716l-0.025-0.076c0.796 2.021 2.365 3.59 4.334 4.368l0.052 0.018c1.078 0.415 2.326 0.669 3.628 0.697l0.012 0c1.6 0.075 2.108 0.090 6.182 0.090s4.582-0.019 6.182-0.090c1.315-0.029 2.562-0.282 3.716-0.723l-0.076 0.026c2.021-0.796 3.59-2.365 4.368-4.334l0.018-0.052c0.416-1.078 0.669-2.326 0.697-3.628l0-0.012c0.075-1.6 0.090-2.108 0.090-6.182s-0.019-4.582-0.090-6.182c-0.029-1.315-0.282-2.562-0.723-3.716l0.026 0.076c-0.398-1.040-0.986-1.926-1.729-2.656l-0.001-0.001c-0.73-0.745-1.617-1.333-2.607-1.713l-0.050-0.017c-1.078-0.416-2.326-0.67-3.628-0.697l-0.012-0c-1.6-0.075-2.108-0.090-6.182-0.090z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="team__item">
+            <img class="team__phofo" src="img/team/team-4.jpg" alt="" />
+            <div class="team__name">Полина</div>
+            <div class="team__prof">Художник</div>
+            <div class="team__text">
+              <p>
+                ККТиМ ВГИК<br />
+                специальность живопись
+              </p>
+            </div>
+            <div class="social">
+              <a class="social__item" href="#" target="_blank">
+                <svg
+                  fill="#c6cacc"
+                  width="20px"
+                  height="20px"
+                  viewBox="-2.5 0 32 32"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>vk</title>
+                  <path
+                    d="M16.563 15.75c-0.5-0.188-0.5-0.906-0.531-1.406-0.125-1.781 0.5-4.5-0.25-5.656-0.531-0.688-3.094-0.625-4.656-0.531-0.438 0.063-0.969 0.156-1.344 0.344s-0.75 0.5-0.75 0.781c0 0.406 0.938 0.344 1.281 0.875 0.375 0.563 0.375 1.781 0.375 2.781 0 1.156-0.188 2.688-0.656 2.75-0.719 0.031-1.125-0.688-1.5-1.219-0.75-1.031-1.5-2.313-2.063-3.563-0.281-0.656-0.438-1.375-0.844-1.656-0.625-0.438-1.75-0.469-2.844-0.438-1 0.031-2.438-0.094-2.719 0.5-0.219 0.656 0.25 1.281 0.5 1.813 1.281 2.781 2.656 5.219 4.344 7.531 1.563 2.156 3.031 3.875 5.906 4.781 0.813 0.25 4.375 0.969 5.094 0 0.25-0.375 0.188-1.219 0.313-1.844s0.281-1.25 0.875-1.281c0.5-0.031 0.781 0.406 1.094 0.719 0.344 0.344 0.625 0.625 0.875 0.938 0.594 0.594 1.219 1.406 1.969 1.719 1.031 0.438 2.625 0.313 4.125 0.25 1.219-0.031 2.094-0.281 2.188-1 0.063-0.563-0.563-1.375-0.938-1.844-0.938-1.156-1.375-1.5-2.438-2.563-0.469-0.469-1.063-0.969-1.063-1.531-0.031-0.344 0.25-0.656 0.5-1 1.094-1.625 2.188-2.781 3.188-4.469 0.281-0.5 0.938-1.656 0.688-2.219-0.281-0.625-1.844-0.438-2.813-0.438-1.25 0-2.875-0.094-3.188 0.156-0.594 0.406-0.844 1.063-1.125 1.688-0.625 1.438-1.469 2.906-2.344 4-0.313 0.375-0.906 1.156-1.25 1.031z"
+                  ></path>
+                </svg>
+              </a>
+
+              <a class="social__item" href="#" target="_blank">
+                <svg
+                  fill="#c6cacc"
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M29.919 6.163l-4.225 19.925c-0.319 1.406-1.15 1.756-2.331 1.094l-6.438-4.744-3.106 2.988c-0.344 0.344-0.631 0.631-1.294 0.631l0.463-6.556 11.931-10.781c0.519-0.462-0.113-0.719-0.806-0.256l-14.75 9.288-6.35-1.988c-1.381-0.431-1.406-1.381 0.288-2.044l24.837-9.569c1.15-0.431 2.156 0.256 1.781 2.013z"
+                  />
+                </svg>
+              </a>
+
+              <a class="social__item" href="#" target="_blank">
+                <svg
+                  fill="#c6cacc"
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 32 32"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M25.805 7.996c0 0 0 0.001 0 0.001 0 0.994-0.806 1.799-1.799 1.799s-1.799-0.806-1.799-1.799c0-0.994 0.806-1.799 1.799-1.799v0c0.993 0.001 1.798 0.805 1.799 1.798v0zM16 20.999c-2.761 0-4.999-2.238-4.999-4.999s2.238-4.999 4.999-4.999c2.761 0 4.999 2.238 4.999 4.999v0c0 0 0 0.001 0 0.001 0 2.76-2.237 4.997-4.997 4.997-0 0-0.001 0-0.001 0h0zM16 8.3c0 0 0 0-0 0-4.253 0-7.7 3.448-7.7 7.7s3.448 7.7 7.7 7.7c4.253 0 7.7-3.448 7.7-7.7v0c0-0 0-0 0-0.001 0-4.252-3.447-7.7-7.7-7.7-0 0-0 0-0.001 0h0zM16 3.704c4.003 0 4.48 0.020 6.061 0.089 1.003 0.012 1.957 0.202 2.84 0.538l-0.057-0.019c1.314 0.512 2.334 1.532 2.835 2.812l0.012 0.034c0.316 0.826 0.504 1.781 0.516 2.778l0 0.005c0.071 1.582 0.087 2.057 0.087 6.061s-0.019 4.48-0.092 6.061c-0.019 1.004-0.21 1.958-0.545 2.841l0.019-0.058c-0.258 0.676-0.64 1.252-1.123 1.726l-0.001 0.001c-0.473 0.484-1.049 0.866-1.692 1.109l-0.032 0.011c-0.829 0.316-1.787 0.504-2.788 0.516l-0.005 0c-1.592 0.071-2.061 0.087-6.072 0.087-4.013 0-4.481-0.019-6.072-0.092-1.008-0.019-1.966-0.21-2.853-0.545l0.059 0.019c-0.676-0.254-1.252-0.637-1.722-1.122l-0.001-0.001c-0.489-0.47-0.873-1.047-1.114-1.693l-0.010-0.031c-0.315-0.828-0.506-1.785-0.525-2.785l-0-0.008c-0.056-1.575-0.076-2.061-0.076-6.053 0-3.994 0.020-4.481 0.076-6.075 0.019-1.007 0.209-1.964 0.544-2.85l-0.019 0.059c0.247-0.679 0.632-1.257 1.123-1.724l0.002-0.002c0.468-0.492 1.045-0.875 1.692-1.112l0.031-0.010c0.823-0.318 1.774-0.509 2.768-0.526l0.007-0c1.593-0.056 2.062-0.075 6.072-0.075zM16 1.004c-4.074 0-4.582 0.019-6.182 0.090-1.315 0.028-2.562 0.282-3.716 0.723l0.076-0.025c-1.040 0.397-1.926 0.986-2.656 1.728l-0.001 0.001c-0.745 0.73-1.333 1.617-1.713 2.607l-0.017 0.050c-0.416 1.078-0.67 2.326-0.697 3.628l-0 0.012c-0.075 1.6-0.090 2.108-0.090 6.182s0.019 4.582 0.090 6.182c0.028 1.315 0.282 2.562 0.723 3.716l-0.025-0.076c0.796 2.021 2.365 3.59 4.334 4.368l0.052 0.018c1.078 0.415 2.326 0.669 3.628 0.697l0.012 0c1.6 0.075 2.108 0.090 6.182 0.090s4.582-0.019 6.182-0.090c1.315-0.029 2.562-0.282 3.716-0.723l-0.076 0.026c2.021-0.796 3.59-2.365 4.368-4.334l0.018-0.052c0.416-1.078 0.669-2.326 0.697-3.628l0-0.012c0.075-1.6 0.090-2.108 0.090-6.182s-0.019-4.582-0.090-6.182c-0.029-1.315-0.282-2.562-0.723-3.716l0.026 0.076c-0.398-1.040-0.986-1.926-1.729-2.656l-0.001-0.001c-0.73-0.745-1.617-1.333-2.607-1.713l-0.050-0.017c-1.078-0.416-2.326-0.67-3.628-0.697l-0.012-0c-1.6-0.075-2.108-0.090-6.182-0.090z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- /.Team__inner -->
+      </div>
+      <!-- /.Container -->
+    </div>
+    <!-- /.Team -->
+
+    <!-- Testimonials -->
+    <div class="reviews" id="reviews">
+      <div class="container">
         <div class="reviews__slider" id="reviewsSlider">
-            <div class="slick-item">
-                <div class="reviews__item">
-                    <div class="reviews__photo">
-                        <img class="reviews__img" src="img/reviews/reviews-1.jpg" alt="">
-                    </div>
-                    <div class="reviews__content">
-                        <div class="reviews__text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</div>
-                        <div class="reviews__author">Susan Sims, Interaction Designer at XYZ</div>
-                    </div>
+          <div class="slick-item">
+            <div class="reviews__item">
+              <div class="reviews__photo">
+                <img
+                  class="reviews__img"
+                  src="img/reviews/1.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="reviews__content">
+                <div class="reviews__text">
+                  “Спасибо вам огромное, получилось просто шикарно, превзошло все ожидания. Всё просто супер. Именинница в восторге”
                 </div>
+                <div class="reviews__author">
+                  Мария Темченко
+                </div>
+              </div>
             </div>
+          </div>
 
-            <div class="slick-item">
-                <div class="reviews__item">
-                    <div class="reviews__photo">
-                        <img class="reviews__img" src="img/reviews/reviews-2.jpg" alt="">
-                    </div>
-                    <div class="reviews__content">
-                        <div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat iure sed placeat laborum, labore explicabo impedit qui!”</div>
-                        <div class="reviews__author">Rodney Clark, Mobile app Developer</div>
-                    </div>
+          <div class="slick-item">
+            <div class="reviews__item">
+              <div class="reviews__photo">
+                <img
+                  class="reviews__img"
+                  src="img/reviews/2.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="reviews__content">
+                <div class="reviews__text">
+                  “Здравствуйте! Картину забрал, уже висит дома на стене. Всё отлично! Я в восторге! Буду рекомендовать вашу мастерскую своим друзьям и знакомым!”
                 </div>
+                <div class="reviews__author">
+                  Артём Кулик
+                </div>
+              </div>
             </div>
+          </div>
+
+          <div class="slick-item">
+            <div class="reviews__item">
+              <div class="reviews__photo">
+                <img
+                  class="reviews__img"
+                  src="img/reviews/3.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="reviews__content">
+                <div class="reviews__text">
+                  “Молодцы! Заказ выполнили очень качественно и в кратчайшие сроки.Очень хорошие и вежливые ребята работают. Профессионалы своего дела”
+                </div>
+                <div class="reviews__author">
+                  Никита Устинов
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slick-item">
+            <div class="reviews__item">
+              <div class="reviews__photo">
+                <img
+                  class="reviews__img"
+                  src="img/reviews/4.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="reviews__content">
+                <div class="reviews__text">
+                  “Здравствуйте, спасибо вам за прекрасно выполненную работу. И сама работа и оформление на высшем уровне. Надеюсь на дальнейшее сотрудничество”
+                </div>
+                <div class="reviews__author">
+                  Виктория Морозова
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slick-item">
+            <div class="reviews__item">
+              <div class="reviews__photo">
+                <img
+                  class="reviews__img"
+                  src="img/reviews/5.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="reviews__content">
+                <div class="reviews__text">
+                  “Виктор, добрый вечер. Заказ получил, вся семья в огромном восторге. Картина просто супер!!!! Жена под безумным впечатлением”
+                </div>
+                <div class="reviews__author">
+                  Антон Снежков
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.reviews -->
 
-    </div><!-- /.container -->
-</div><!-- /.reviews -->
-
-
-<!-- Download -->
-<div class="download" id="download">
-    <div class="container">
-        <h3 class="download__title">Are You Ready to Start? Download Now For Free!</h3>
+    <!-- Download -->
+    <div class="download" id="download">
+      <div class="container">
+        <h3 class="download__title">Актуальный прайс-лист</h3>
         <div class="download__text">
-            <p>Fusce dapibus, tellus ac cursus commodo</p>
+          <p>Все виды наших работ по самым сочным ценам</p>
         </div>
-        <a class="btn btn--red btn--long" href="#">Download Here</a>
+        <a class="btn btn--red btn--long" href="#">Скачать сейчас</a>
+      </div>
     </div>
-</div>
 
-
-<!-- Footer -->
-<footer class="footer">
-    <div class="container">
-
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
         <div class="footer__inner">
-            <div class="footer__block">
-                <h4 class="footer__title">Location</h4>
-                <address class="footer__address">
-                    <div>3481 Melrose Place</div>
-                    <div>Beverly Hills, CA 90210</div>
-                </address>
+          <div class="footer__block">
+            <h4 class="footer__title">Адрес</h4>
+            <address class="footer__address">
+              428000, Чувашская республика,<br />
+              г. Чебоксары, ул. Чапаева, 11
+            </address>
+          </div>
+
+          <div class="footer__block">
+            <h4 class="footer__title">соц. сети</h4>
+            <div class="social social--footer">
+              <a class="social__item" href="#" target="_blank">
+                <svg
+                  fill="#c6cacc"
+                  width="20px"
+                  height="20px"
+                  viewBox="-2.5 0 32 32"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>vk</title>
+                  <path
+                    d="M16.563 15.75c-0.5-0.188-0.5-0.906-0.531-1.406-0.125-1.781 0.5-4.5-0.25-5.656-0.531-0.688-3.094-0.625-4.656-0.531-0.438 0.063-0.969 0.156-1.344 0.344s-0.75 0.5-0.75 0.781c0 0.406 0.938 0.344 1.281 0.875 0.375 0.563 0.375 1.781 0.375 2.781 0 1.156-0.188 2.688-0.656 2.75-0.719 0.031-1.125-0.688-1.5-1.219-0.75-1.031-1.5-2.313-2.063-3.563-0.281-0.656-0.438-1.375-0.844-1.656-0.625-0.438-1.75-0.469-2.844-0.438-1 0.031-2.438-0.094-2.719 0.5-0.219 0.656 0.25 1.281 0.5 1.813 1.281 2.781 2.656 5.219 4.344 7.531 1.563 2.156 3.031 3.875 5.906 4.781 0.813 0.25 4.375 0.969 5.094 0 0.25-0.375 0.188-1.219 0.313-1.844s0.281-1.25 0.875-1.281c0.5-0.031 0.781 0.406 1.094 0.719 0.344 0.344 0.625 0.625 0.875 0.938 0.594 0.594 1.219 1.406 1.969 1.719 1.031 0.438 2.625 0.313 4.125 0.25 1.219-0.031 2.094-0.281 2.188-1 0.063-0.563-0.563-1.375-0.938-1.844-0.938-1.156-1.375-1.5-2.438-2.563-0.469-0.469-1.063-0.969-1.063-1.531-0.031-0.344 0.25-0.656 0.5-1 1.094-1.625 2.188-2.781 3.188-4.469 0.281-0.5 0.938-1.656 0.688-2.219-0.281-0.625-1.844-0.438-2.813-0.438-1.25 0-2.875-0.094-3.188 0.156-0.594 0.406-0.844 1.063-1.125 1.688-0.625 1.438-1.469 2.906-2.344 4-0.313 0.375-0.906 1.156-1.25 1.031z"
+                  ></path>
+                </svg>
+              </a>
+
+              <a class="social__item" href="#" target="_blank">
+                <svg
+                  fill="#c6cacc"
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M29.919 6.163l-4.225 19.925c-0.319 1.406-1.15 1.756-2.331 1.094l-6.438-4.744-3.106 2.988c-0.344 0.344-0.631 0.631-1.294 0.631l0.463-6.556 11.931-10.781c0.519-0.462-0.113-0.719-0.806-0.256l-14.75 9.288-6.35-1.988c-1.381-0.431-1.406-1.381 0.288-2.044l24.837-9.569c1.15-0.431 2.156 0.256 1.781 2.013z"
+                  />
+                </svg>
+              </a>
+
+              <a class="social__item" href="#" target="_blank">
+                <svg
+                  fill="#c6cacc"
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 32 32"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M25.805 7.996c0 0 0 0.001 0 0.001 0 0.994-0.806 1.799-1.799 1.799s-1.799-0.806-1.799-1.799c0-0.994 0.806-1.799 1.799-1.799v0c0.993 0.001 1.798 0.805 1.799 1.798v0zM16 20.999c-2.761 0-4.999-2.238-4.999-4.999s2.238-4.999 4.999-4.999c2.761 0 4.999 2.238 4.999 4.999v0c0 0 0 0.001 0 0.001 0 2.76-2.237 4.997-4.997 4.997-0 0-0.001 0-0.001 0h0zM16 8.3c0 0 0 0-0 0-4.253 0-7.7 3.448-7.7 7.7s3.448 7.7 7.7 7.7c4.253 0 7.7-3.448 7.7-7.7v0c0-0 0-0 0-0.001 0-4.252-3.447-7.7-7.7-7.7-0 0-0 0-0.001 0h0zM16 3.704c4.003 0 4.48 0.020 6.061 0.089 1.003 0.012 1.957 0.202 2.84 0.538l-0.057-0.019c1.314 0.512 2.334 1.532 2.835 2.812l0.012 0.034c0.316 0.826 0.504 1.781 0.516 2.778l0 0.005c0.071 1.582 0.087 2.057 0.087 6.061s-0.019 4.48-0.092 6.061c-0.019 1.004-0.21 1.958-0.545 2.841l0.019-0.058c-0.258 0.676-0.64 1.252-1.123 1.726l-0.001 0.001c-0.473 0.484-1.049 0.866-1.692 1.109l-0.032 0.011c-0.829 0.316-1.787 0.504-2.788 0.516l-0.005 0c-1.592 0.071-2.061 0.087-6.072 0.087-4.013 0-4.481-0.019-6.072-0.092-1.008-0.019-1.966-0.21-2.853-0.545l0.059 0.019c-0.676-0.254-1.252-0.637-1.722-1.122l-0.001-0.001c-0.489-0.47-0.873-1.047-1.114-1.693l-0.010-0.031c-0.315-0.828-0.506-1.785-0.525-2.785l-0-0.008c-0.056-1.575-0.076-2.061-0.076-6.053 0-3.994 0.020-4.481 0.076-6.075 0.019-1.007 0.209-1.964 0.544-2.85l-0.019 0.059c0.247-0.679 0.632-1.257 1.123-1.724l0.002-0.002c0.468-0.492 1.045-0.875 1.692-1.112l0.031-0.010c0.823-0.318 1.774-0.509 2.768-0.526l0.007-0c1.593-0.056 2.062-0.075 6.072-0.075zM16 1.004c-4.074 0-4.582 0.019-6.182 0.090-1.315 0.028-2.562 0.282-3.716 0.723l0.076-0.025c-1.040 0.397-1.926 0.986-2.656 1.728l-0.001 0.001c-0.745 0.73-1.333 1.617-1.713 2.607l-0.017 0.050c-0.416 1.078-0.67 2.326-0.697 3.628l-0 0.012c-0.075 1.6-0.090 2.108-0.090 6.182s0.019 4.582 0.090 6.182c0.028 1.315 0.282 2.562 0.723 3.716l-0.025-0.076c0.796 2.021 2.365 3.59 4.334 4.368l0.052 0.018c1.078 0.415 2.326 0.669 3.628 0.697l0.012 0c1.6 0.075 2.108 0.090 6.182 0.090s4.582-0.019 6.182-0.090c1.315-0.029 2.562-0.282 3.716-0.723l-0.076 0.026c2.021-0.796 3.59-2.365 4.368-4.334l0.018-0.052c0.416-1.078 0.669-2.326 0.697-3.628l0-0.012c0.075-1.6 0.090-2.108 0.090-6.182s-0.019-4.582-0.090-6.182c-0.029-1.315-0.282-2.562-0.723-3.716l0.026 0.076c-0.398-1.040-0.986-1.926-1.729-2.656l-0.001-0.001c-0.73-0.745-1.617-1.333-2.607-1.713l-0.050-0.017c-1.078-0.416-2.326-0.67-3.628-0.697l-0.012-0c-1.6-0.075-2.108-0.090-6.182-0.090z"
+                  ></path>
+                </svg>
+              </a>
             </div>
+          </div>
 
-            <div class="footer__block">
-                <h4 class="footer__title">Share with Love</h4>
-                <div class="social social--footer">
-                    <a class="social__item" href="#" target="_blank">
-                        <svg class="social__icon">
-                            <use xlink:href="#facebook"></use>
-                        </svg>
-                    </a>
-
-                    <a class="social__item" href="#" target="_blank">
-                        <svg class="social__icon">
-                            <use xlink:href="#twitter"></use>
-                        </svg>
-                    </a>
-
-                    <a class="social__item" href="#" target="_blank">
-                        <svg class="social__icon">
-                            <use xlink:href="#linkedin"></use>
-                        </svg>
-                    </a>
-                </div>
+          <div class="footer__block">
+            <h4 class="footer__title">Свяжитесь с нами прямо сейчас!</h4>
+            <div class="footer__text">
+              <p>
+                И уже совсем скоро, на этом месте будет Ваш счастливый фото и
+                видео-отзыв
+              </p>
             </div>
-
-            <div class="footer__block">
-                <h4 class="footer__title">About ActiveBox</h4>
-                <div class="footer__text">
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla.</p>
-                </div>
-            </div>
-        </div><!-- /.footer__inner -->
-
-    </div><!-- /.container -->
-
-    <div class="copyright">
-        <div class="container">
-            <div class="copyright__text">
-                <div>Copyright © 2022 ActiveBox. All Rights Reserved</div>
-                <div>Made <span>by Alex Lev</span></div>
-            </div>
+          </div>
         </div>
-    </div>
-</footer>
+        <!-- /.footer__inner -->
+      </div>
+      <!-- /.container -->
 
+      <div class="copyright">
+        <div class="container">
+          <div class="copyright__text">
+            <span>Alexlev</span>
+            © 2022-2023. Все права защищены
+          </div>
+        </div>
+      </div>
+    </footer>
 
-
-
-<!-- Javascript -->
-<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="app.js"></script>
-
-
-
-
-
-
-
-
-
-</body>
+    <!-- Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="app.js"></script>
+  </body>
 </html>
