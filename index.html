@@ -47,7 +47,7 @@
     <meta name="keywords" content="Создание сайтов, верстка сайтов" />
     <meta name="google" content="notranslate" />
 
-    <title>ActiveBox</title>
+    <title>Art Home</title>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
@@ -87,6 +87,10 @@
             <img src="img/logo.png" alt="" />
           </div>
 
+          <button class="burger" type="button" id="navToggle">
+            <span class="burger__item">Menu</span>
+          </button>
+
           <nav class="nav" id="nav">
             <a class="nav__link" href="#" data-scroll="#features"
               >Преимущества</a
@@ -96,10 +100,6 @@
             <a class="nav__link" href="#" data-scroll="#reviews">Отзывы</a>
             <a class="nav__link" href="#" data-scroll="#download">Цена</a>
           </nav>
-
-          <button class="burger" type="button" id="navToggle">
-            <span class="burger__item">Menu</span>
-          </button>
         </div>
       </div>
     </header>
@@ -114,7 +114,9 @@
             рублей!<br />
             Картины маслом в короткие сроки!
           </h2>
-          <a class="btn btn--red" href="#">Перейти в каталог</a>
+          <a class="btn btn--red" href="#" data-scroll="#works"
+            >Перейти в каталог</a
+          >
         </div>
       </div>
     </div>
@@ -184,14 +186,149 @@
     <!-- Works -->
     <div class="works" id="works">
       <div class="works__item">
-        <img class="works__photo" src="img/work/work-1.jpg" alt="" />
+        <img class="works__photo" src="img/work/1.jpg" alt="" />
         <div class="works__content">
-          <div class="works__title">Project Name</div>
-          <div class="works__text">User Interface Design</div>
+          <div class="works__title">Портрет в стиле "масляные краски"</div>
+          <div class="works__text">
+            Портрет обработанный в стиле масляная живопись и напечатанный на
+            натуральном премиум холсте!
+          </div>
+          <div class="works__price">
+            <span class="works__price-new">2 490р.</span>
+            <span class="works__price-old">3 490р.</span>
+          </div>
+          <div class="works__links">
+            <a class="works__link works__link--filled" href="#">Подробнее</a>
+            <a class="works__link" href="#">Заказать</a>
+          </div>
+        </div>
+      </div>
+      <div class="works__item">
+        <img class="works__photo" src="img/work/2.jpg" alt="" />
+        <div class="works__content">
+          <div class="works__title">Фото на холсте</div>
+          <div class="works__text">
+            Печать любых ваших фотографий и изображений на натуральном хлопковом
+            холсте с натяжкой на подрамник
+          </div>
+          <div class="works__price">
+            <span class="works__price-new">1 590р.</span>
+            <span class="works__price-old">2 190р.</span>
+          </div>
+          <div class="works__links">
+            <a class="works__link works__link--filled" href="#">Подробнее</a>
+            <a class="works__link" href="#">Заказать</a>
+          </div>
+        </div>
+      </div>
+      <div class="works__item">
+        <img class="works__photo" src="img/work/3.jpg" alt="" />
+        <div class="works__content">
+          <div class="works__title">Портрет на холсте в стиле Аниме</div>
+          <div class="works__text">
+            Шикарный яркий портрет в стиле японской анимации вашего друга,
+            подруги, родного человека на натуральном хлопковом холсте.
+            Персональный или групповой.
+          </div>
+          <div class="works__price">
+            <span class="works__price-new">3 500р.</span>
+            <span class="works__price-old">4 900р.</span>
+          </div>
+          <div class="works__links">
+            <a class="works__link works__link--filled" href="#">Подробнее</a>
+            <a class="works__link" href="#">Заказать</a>
+          </div>
+        </div>
+      </div>
+      <div class="works__item">
+        <img class="works__photo" src="img/work/4.jpg" alt="" />
+        <div class="works__content">
+          <div class="works__title">Фотомозаика на холсте</div>
+          <div class="works__text">
+            Много маленьких фотографий образующих единый образ
+          </div>
+          <div class="works__price">
+            <span class="works__price-new">2 490р.</span>
+            <span class="works__price-old">3 490р.</span>
+          </div>
+          <div class="works__links">
+            <a class="works__link works__link--filled" href="#">Подробнее</a>
+            <a class="works__link" href="#">Заказать</a>
+          </div>
+        </div>
+      </div>
+      <div class="works__item">
+        <img class="works__photo" src="img/work/5.jpg" alt="" />
+        <div class="works__content">
+          <div class="works__title">Портрет в стиле Love is</div>
+          <div class="works__text">
+            Портрет в стиле Love is по вашей фотографии + печать на натуральном
+            хлопковом холсте с натяжкой на деревянный подрамник
+          </div>
+          <div class="works__price">
+            <span class="works__price-new">2 190р.</span>
+            <span class="works__price-old">2 990р.</span>
+          </div>
+          <div class="works__links">
+            <a class="works__link works__link--filled" href="#">Подробнее</a>
+            <a class="works__link" href="#">Заказать</a>
+          </div>
+        </div>
+      </div>
+      <div class="works__item">
+        <img class="works__photo" src="img/work/6.jpg" alt="" />
+        <div class="works__content">
+          <div class="works__title">Круглые картины на холсте</div>
+          <div class="works__text">
+            Изготовление круглых картин и портретов на холсте.
+          </div>
+          <div class="works__price">
+            <span class="works__price-new">2 900р.</span>
+            <span class="works__price-old">3 900р.</span>
+          </div>
+          <div class="works__links">
+            <a class="works__link works__link--filled" href="#">Подробнее</a>
+            <a class="works__link" href="#">Заказать</a>
+          </div>
+        </div>
+      </div>
+      <div class="works__item">
+        <img class="works__photo" src="img/work/7.jpg" alt="" />
+        <div class="works__content">
+          <div class="works__title">Восстановление старых фотографий</div>
+          <div class="works__text">
+            Изготовление настоящей картины на натуральном холсте по старой
+            бумажной фотографии.
+          </div>
+          <div class="works__price">
+            <span class="works__price-new">2 490р.</span>
+            <span class="works__price-old">3 490р.</span>
+          </div>
+          <div class="works__links">
+            <a class="works__link works__link--filled" href="#">Подробнее</a>
+            <a class="works__link" href="#">Заказать</a>
+          </div>
+        </div>
+      </div>
+      <div class="works__item">
+        <img class="works__photo" src="img/work/8.jpg" alt="" />
+        <div class="works__content">
+          <div class="works__title">Портрет домашнего питомца на холсте</div>
+          <div class="works__text">
+            Портрет любого домашнего животного на натуральном хлопковом холсте. Персональный или в компании хозяина:)
+          </div>
+          <div class="works__price">
+            <span class="works__price-new">2 690р.</span>
+            <span class="works__price-old">3 950р.</span>
+          </div>
+          <div class="works__links">
+            <a class="works__link works__link--filled" href="#">Подробнее</a>
+            <a class="works__link" href="#">Заказать</a>
+          </div>
         </div>
       </div>
 
-      <div class="works__item">
+      <!-- <div class="works__item">
         <img class="works__photo" src="img/work/work-2.jpg" alt="" />
         <div class="works__content">
           <div class="works__title">Project Name</div>
@@ -245,7 +382,7 @@
           <div class="works__title">Project Name</div>
           <div class="works__text">User Interface Design</div>
         </div>
-      </div>
+      </div> -->
     </div>
     <!-- /.Works-->
 
@@ -498,19 +635,14 @@
           <div class="slick-item">
             <div class="reviews__item">
               <div class="reviews__photo">
-                <img
-                  class="reviews__img"
-                  src="img/reviews/1.jpg"
-                  alt=""
-                />
+                <img class="reviews__img" src="img/reviews/1.jpg" alt="" />
               </div>
               <div class="reviews__content">
                 <div class="reviews__text">
-                  “Спасибо вам огромное, получилось просто шикарно, превзошло все ожидания. Всё просто супер. Именинница в восторге”
+                  “Спасибо вам огромное, получилось просто шикарно, превзошло
+                  все ожидания. Всё просто супер. Именинница в восторге”
                 </div>
-                <div class="reviews__author">
-                  Мария Темченко
-                </div>
+                <div class="reviews__author">Мария Темченко</div>
               </div>
             </div>
           </div>
@@ -518,19 +650,15 @@
           <div class="slick-item">
             <div class="reviews__item">
               <div class="reviews__photo">
-                <img
-                  class="reviews__img"
-                  src="img/reviews/2.jpg"
-                  alt=""
-                />
+                <img class="reviews__img" src="img/reviews/2.jpg" alt="" />
               </div>
               <div class="reviews__content">
                 <div class="reviews__text">
-                  “Здравствуйте! Картину забрал, уже висит дома на стене. Всё отлично! Я в восторге! Буду рекомендовать вашу мастерскую своим друзьям и знакомым!”
+                  “Здравствуйте! Картину забрал, уже висит дома на стене. Всё
+                  отлично! Я в восторге! Буду рекомендовать вашу мастерскую
+                  своим друзьям и знакомым!”
                 </div>
-                <div class="reviews__author">
-                  Артём Кулик
-                </div>
+                <div class="reviews__author">Артём Кулик</div>
               </div>
             </div>
           </div>
@@ -538,19 +666,15 @@
           <div class="slick-item">
             <div class="reviews__item">
               <div class="reviews__photo">
-                <img
-                  class="reviews__img"
-                  src="img/reviews/3.jpg"
-                  alt=""
-                />
+                <img class="reviews__img" src="img/reviews/3.jpg" alt="" />
               </div>
               <div class="reviews__content">
                 <div class="reviews__text">
-                  “Молодцы! Заказ выполнили очень качественно и в кратчайшие сроки.Очень хорошие и вежливые ребята работают. Профессионалы своего дела”
+                  “Молодцы! Заказ выполнили очень качественно и в кратчайшие
+                  сроки.Очень хорошие и вежливые ребята работают. Профессионалы
+                  своего дела”
                 </div>
-                <div class="reviews__author">
-                  Никита Устинов
-                </div>
+                <div class="reviews__author">Никита Устинов</div>
               </div>
             </div>
           </div>
@@ -558,19 +682,15 @@
           <div class="slick-item">
             <div class="reviews__item">
               <div class="reviews__photo">
-                <img
-                  class="reviews__img"
-                  src="img/reviews/4.jpg"
-                  alt=""
-                />
+                <img class="reviews__img" src="img/reviews/4.jpg" alt="" />
               </div>
               <div class="reviews__content">
                 <div class="reviews__text">
-                  “Здравствуйте, спасибо вам за прекрасно выполненную работу. И сама работа и оформление на высшем уровне. Надеюсь на дальнейшее сотрудничество”
+                  “Здравствуйте, спасибо вам за прекрасно выполненную работу. И
+                  сама работа и оформление на высшем уровне. Надеюсь на
+                  дальнейшее сотрудничество”
                 </div>
-                <div class="reviews__author">
-                  Виктория Морозова
-                </div>
+                <div class="reviews__author">Виктория Морозова</div>
               </div>
             </div>
           </div>
@@ -578,19 +698,15 @@
           <div class="slick-item">
             <div class="reviews__item">
               <div class="reviews__photo">
-                <img
-                  class="reviews__img"
-                  src="img/reviews/5.jpg"
-                  alt=""
-                />
+                <img class="reviews__img" src="img/reviews/5.jpg" alt="" />
               </div>
               <div class="reviews__content">
                 <div class="reviews__text">
-                  “Виктор, добрый вечер. Заказ получил, вся семья в огромном восторге. Картина просто супер!!!! Жена под безумным впечатлением”
+                  “Виктор, добрый вечер. Заказ получил, вся семья в огромном
+                  восторге. Картина просто супер!!!! Жена под безумным
+                  впечатлением”
                 </div>
-                <div class="reviews__author">
-                  Антон Снежков
-                </div>
+                <div class="reviews__author">Антон Снежков</div>
               </div>
             </div>
           </div>
@@ -690,8 +806,8 @@
       <div class="copyright">
         <div class="container">
           <div class="copyright__text">
-            <span>Alexlev</span>
-            © 2022-2023. Все права защищены
+            Art Home © 2022-2023. Все права защищены
+            <span>by Alexlev</span>
           </div>
         </div>
       </div>
